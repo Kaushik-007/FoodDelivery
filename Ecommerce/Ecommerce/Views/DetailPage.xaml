@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ecommerce.Views.DetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="{Binding Image}" HeightRequest="250" WidthRequest="200" />
+            <Label Text="{Binding Name}" TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding Details}" TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding Cost}" TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+            <StackLayout HorizontalOptions="CenterAndExpand">
+               
+                <Stepper x:Name="NoOfOrders" Increment="1" ValueChanged="NoOfOrders_ValueChanged"></Stepper>
+            </StackLayout>
+
+            <Label x:Name="Total"  TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="TotalCost"  TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+
+            <Button Text="Order"  BackgroundColor="Green"  TextColor="White" VerticalOptions="EndAndExpand" Clicked="Order_Clicked_1"  x:Name="Order"  HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

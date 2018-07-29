@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ecommerce.Views.CreateNewPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <StackLayout Padding="18,50,18,20" Orientation="Vertical">
+                    <Label Text="Create Social Health App Account" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand"></Label>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+
+                    <Entry Keyboard="Text" BackgroundColor="White" x:Name="UserName" Placeholder="UserName" WidthRequest="300" TextColor="Black" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+                    <Entry Keyboard="Text" BackgroundColor="White" Placeholder="Password" x:Name="Password" IsPassword="True" WidthRequest="300" TextColor="Black" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+                    <Entry Keyboard="Text" BackgroundColor="White" Placeholder="First Name" x:Name="FirstName" WidthRequest="300" TextColor="Black" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+                    <Entry Keyboard="Text" BackgroundColor="White" Placeholder="Last Name" x:Name="LastName" WidthRequest="300" TextColor="Black" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+                    <Entry Keyboard="Text" BackgroundColor="White" Placeholder="Email" x:Name="Email" WidthRequest="300" TextColor="Black" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+                    <Label x:Name="Error" FontSize="Micro" TextColor="Red" HorizontalOptions="Center"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Cancel" x:Name="Cancel" HorizontalOptions="Start" FontFamily="Droid Sans Mono" TextColor="#5bc0de" BackgroundColor="Transparent" Clicked="Button_Clicked"></Button>
+                        <Button Text="Create Account" x:Name="Create" HorizontalOptions="EndAndExpand" FontFamily="Droid Sans Mono" TextColor="#5bc0de" BackgroundColor="Transparent" Clicked="Create_Clicked"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView> 
+    </ContentPage.Content>
+</ContentPage>
