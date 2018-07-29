@@ -44,6 +44,7 @@ namespace Ecommerce.Views
                     if (rec >= 1)
                     {
                         await DisplayAlert("Successfully", "Created", "OK");
+                        await Navigation.PopAsync();
                     }
                     else
                     {

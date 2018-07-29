@@ -75,6 +75,7 @@ namespace Ecommerce.Views
 
             Application.Current.Properties["UserName"] = null;
             Application.Current.Properties["FirstName"] = null;
+            Navigation.PopToRootAsync();
             Navigation.PushModalAsync(new Login());
         }
 
@@ -107,8 +108,8 @@ namespace Ecommerce.Views
 
             var closer = DependencyService.Get<ICloseApplication>();
             closer?.closeApplication();
-          
-            return base.OnBackButtonPressed();
+
+            return true;
         }
     }
 }
